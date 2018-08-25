@@ -1,28 +1,77 @@
-.App {
-  text-align: center;
+*{
+	margin: 0; 
+	padding: 0;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+a{
+	text-decoration: none;
 }
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+kbd{
+	border: 1px solid red;
+	width:4em; 
+	height: 4em; 
+	display: inline-block; 
+	text-transform: uppercase; 
+	position: relative; 
 }
-
-.App-title {
-  font-size: 1.5em;
+kbd > button{
+	position: absolute; 
+	right: 0; 
+	bottom: 0; 
+	display: none; 
 }
-
-.App-intro {
-  font-size: large;
+kbd:hover > button{
+	display: inline-block; 
 }
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+body{
+	background: url(./img/wall.jpg) no-repeat;
+	background-size: cover;
+}
+main{
+	text-align: center;
+	display: flex; 
+	justify-content: center; 
+	align-items: center; 
+	height: 100vh; 
+}
+#main{
+	display: inline-block; 
+}
+#main> div:nth-child(2){
+	margin-left: -22px; 
+}
+#main> div:nth-child(3){
+	margin-left: -80px; 
+}
+.wrapper{
+	background: rgba(255,255,255,0.2);
+	border-radius: 10px;
+}
+.key{
+	width: 50px; 
+	height: 40px; 
+	background: linear-gradient(to bottom, #131314 0%,#181819 50%,#1b1b1c 100%);
+	border: 1px solid #1d1d1f; 
+	color: #818181; 
+	border-radius: 6px; 
+	box-shadow: inset 0px 36px 40px -45px rgba(255,255,255,1);
+	position: relative;
+	font-size: 16px; font-family: Helvetica;
+}
+.row{
+	margin: 20px; 
+}
+.row .key{
+	margin: 0 10px; 
+}
+.key img{
+	width: 16px; 
+	height: 16px; 
+	position: absolute; 
+	left: 4px; 
+	bottom: 2px;
+}
+.key .text{
+	position: absolute; 
+	left: 4px; 
+	top: 2px; 
 }
