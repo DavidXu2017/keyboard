@@ -7,6 +7,7 @@
     "react-dom": "^16.4.2",
     "react-scripts": "1.1.5"
   },
+  "homepage" : "https://davidxu2017.github.io/keyboard/build",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
